@@ -1,0 +1,8 @@
+robots.txt
+llms.txt
+sidemap
+
+googel analitycs
+google srch console
+
+pwa

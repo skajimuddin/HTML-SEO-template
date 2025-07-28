@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 1. CRITICAL REQUIRED TAGS (Highest Priority) -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Page Title Here | Brand Name</title>
+  <meta name="description" content="A brief description of your page (max ~160 characters for SEO).">
+
+  <!-- 2. SEARCH ENGINE DIRECTIVES -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://yourdomain.com/page-slug" />
+
+  <!-- 3. OPEN GRAPH (Social Media - High Priority for Sharing) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Your OG Title" />
+  <meta property="og:description" content="OG Description - for Facebook previews." />
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Description of the image" />
+  <meta property="og:url" content="https://yourdomain.com/page-slug" />
+  <meta property="og:site_name" content="Your Site Name" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- 4. TWITTER CARDS -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Your Twitter Title" />
+  <meta name="twitter:description" content="Twitter description here" />
+  <meta name="twitter:image" content="https://yourdomain.com/twitter-image.jpg" />
+  <meta name="twitter:image:alt" content="Description of Twitter image" />
+  <meta name="twitter:site" content="@yourhandle" />
+  <meta name="twitter:creator" content="@creatorhandle" />
+
+  <!-- 5. FAVICONS (Brand/Visual Identity) -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- 6. STRUCTURED DATA (Search Engine Understanding) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Your Website Name",
+    "url": "https://yourdomain.com",
+    "description": "Website description",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://yourdomain.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Your Organization",
+      "url": "https://yourdomain.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Your Organization",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://yourdomain.com/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <!-- 7. PERFORMANCE OPTIMIZATION -->
+  <!-- DNS Prefetch & Preconnect (only if using google fonts & analytics) -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Preload Critical Resources (use only if needed) -->
+  <link rel="preload" href="/images/hero-image.webp" as="image">
+
+  <!-- 8. INTERNATIONALIZATION -->
+  <link rel="alternate" hreflang="en" href="https://yourdomain.com/page-slug" />
+  <link rel="alternate" hreflang="x-default" href="https://yourdomain.com/page-slug" />
+
+  <!-- 9. PWA / MOBILE META TAGS -->
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" /> <!-- Only if dark mode -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="App Name" />
+
+  <!-- 10. SECURITY HEADERS (modify according to your needs) -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://www.googletagmanager.com https://www.gstatic.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src https://fonts.gstatic.com;
+    img-src 'self' data:;
+    connect-src 'self' https://firestore.googleapis.com https://identitytoolkit.googleapis.com;
+  ">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+
+  <!-- 11. ADDITIONAL STRUCTURED DATA (Context-Specific) -->
+  <!-- Only for articles: -->
+  <meta property="article:author" content="Author Name" />
+  <meta property="article:published_time" content="2025-01-01T00:00:00Z" />
+  <meta property="article:modified_time" content="2025-01-01T00:00:00Z" />
+
+  <!-- Breadcrumb Schema (if applicable) not for SPA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://yourdomain.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Category",
+        "item": "https://yourdomain.com/category"
+      }
+    ]
+  }
+  </script>
+
+  <!-- 12. CONTENT FEEDS (only useful for blogs) -->
+  <link rel="alternate" type="application/rss+xml" title="Site RSS Feed" href="/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Site Atom Feed" href="/atom.xml" />
+
+  <!-- 13. AUTHORSHIP & METADATA -->
+  <meta name="author" content="Azim / Your Name or Agency">
+</head>
+
+<body>
+  <!-- Body -->
+</body>
+
+</html>
